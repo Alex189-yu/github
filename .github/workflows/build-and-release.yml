@@ -20,7 +20,7 @@ jobs:
       run: nuget restore SimpleApp.csproj
 
     - name: Build Application
-      run: msbuild SimpleApp.csproj /p:Configuration=Release /p:Platform="Any CPU"
+      run: msbuild SimpleApp.csproj /p:Configuration=Release /p:Platform="AnyCPU"
 
     - name: Create Release
       id: create_release
